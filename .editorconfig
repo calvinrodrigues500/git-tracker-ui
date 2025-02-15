@@ -1,0 +1,23 @@
+# Root EditorConfig file
+root = true
+
+# Apply to all files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Apply to Markdown files (preserve trailing spaces for line breaks)
+[*.md]
+trim_trailing_whitespace = false
+
+# Apply to JSON, YAML, and package files (force 2-space indentation)
+[*.{json,yml,yaml}]
+indent_size = 2
+
+# Apply to JavaScript, TypeScript, JSX, and TSX files
+[*.{js,ts,jsx,tsx}]
+indent_size = 2
